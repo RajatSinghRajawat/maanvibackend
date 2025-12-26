@@ -25,6 +25,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // Routes
+app.use('/api/admin', require('./src/routes/admin'));
 app.use('/api/employees', require('./src/routes/employees'));
 app.use('/api/attendance', require('./src/routes/attendance'));
 app.use('/api/enquiries', require('./src/routes/enquiries'));
